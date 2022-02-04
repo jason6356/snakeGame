@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Anything exe files the is included from the GCC Compiler
+*.exe
