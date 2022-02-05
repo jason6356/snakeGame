@@ -834,8 +834,8 @@ int game(int players, char* playerName[4][31], char snakeSetChoice, char ladSetC
 
 					playerStep[j] = 0;
 
-					printf(" Player %d has hit player %d\n", i, j);
-					printf(" Player %d has to go back to starting point :)", j);
+					printf(" Player %d has hit player %d\n", i+1, j+1);
+					printf(" Player %d has to go back to starting point :)", j+1);
 					rewind(stdin);
 					getchar();
 
@@ -845,7 +845,7 @@ int game(int players, char* playerName[4][31], char snakeSetChoice, char ladSetC
 					}
 				}
 			}
-
+			//Check winner
 			if (playerStep[0] == 100 || playerStep[1] == 100 || playerStep[2] == 100 || playerStep[3] == 100)//If there is a winner 
 			{
 				gameStatus = false;
